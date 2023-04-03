@@ -12,6 +12,9 @@
 		FA7D9C3929D9C6C500DEC210 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D9C3829D9C6C500DEC210 /* ViewController.swift */; };
 		FA7D9C3E29D9C6C600DEC210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7D9C3D29D9C6C600DEC210 /* Assets.xcassets */; };
 		FA7D9C4129D9C6C600DEC210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7D9C3F29D9C6C600DEC210 /* LaunchScreen.storyboard */; };
+		FA7D9C4B29D9CC1200DEC210 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D9C4A29D9CC1200DEC210 /* TabBarController.swift */; };
+		FA93DB7429DB3B3400A23F23 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB7329DB3B3400A23F23 /* UIColor+ext.swift */; };
+		FA93DB7729DB3C8100A23F23 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB7629DB3C8100A23F23 /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		FA7D9C3D29D9C6C600DEC210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7D9C4029D9C6C600DEC210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7D9C4229D9C6C600DEC210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7D9C4A29D9CC1200DEC210 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FA93DB7329DB3B3400A23F23 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
+		FA93DB7629DB3C8100A23F23 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,10 @@
 		FA7D9C3329D9C6C500DEC210 /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA93DB7229DB3B1800A23F23 /* Helper */,
 				FA7D9C4829D9C81800DEC210 /* Application */,
 				FA7D9C3829D9C6C500DEC210 /* ViewController.swift */,
+				FA7D9C4A29D9CC1200DEC210 /* TabBarController.swift */,
 				FA7D9C4929D9C82B00DEC210 /* SupportingFiles */,
 			);
 			path = WorkoutApp;
@@ -78,6 +86,23 @@
 				FA7D9C4229D9C6C600DEC210 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FA93DB7229DB3B1800A23F23 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FA93DB7529DB3B3D00A23F23 /* Extentions */,
+				FA93DB7629DB3C8100A23F23 /* Resources.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FA93DB7529DB3B3D00A23F23 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FA93DB7329DB3B3400A23F23 /* UIColor+ext.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7D9C3929D9C6C500DEC210 /* ViewController.swift in Sources */,
+				FA7D9C4B29D9CC1200DEC210 /* TabBarController.swift in Sources */,
 				FA7D9C3529D9C6C500DEC210 /* AppDelegate.swift in Sources */,
+				FA93DB7729DB3C8100A23F23 /* Resources.swift in Sources */,
 				FA7D9C3729D9C6C500DEC210 /* SceneDelegate.swift in Sources */,
+				FA93DB7429DB3B3400A23F23 /* UIColor+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
