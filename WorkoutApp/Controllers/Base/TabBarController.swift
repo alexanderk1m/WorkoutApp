@@ -36,23 +36,15 @@ final class TabBarController: UITabBarController {
         tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
-        let overviewController = UIViewController()
-        overviewController.view.backgroundColor = .blue
-        overviewController.title = Resources.Strings.tabBar.overview
-        let sessionController = UIViewController()
-        sessionController.view.backgroundColor = .yellow
-        sessionController.title = Resources.Strings.tabBar.session
-        let progressController = UIViewController()
-        progressController.view.backgroundColor = .red
-        progressController.title = Resources.Strings.tabBar.progress
-        let settingsController = UIViewController()
-        settingsController.view.backgroundColor = .green
-        settingsController.title = Resources.Strings.tabBar.session
+        let overviewController = OverviewController()
+        let sessionController = SessionController()
+        let progressController = ProgressController()
+        let settingsController = SettingsController()
         
-        let overviewNavigation = UINavigationController(rootViewController: overviewController)
-        let sessionNavigation = UINavigationController(rootViewController: sessionController)
-        let progressNavigation = UINavigationController(rootViewController: progressController)
-        let settingsNavigation = UINavigationController(rootViewController: settingsController)
+        let overviewNavigation = NavBarController(rootViewController: overviewController)
+        let sessionNavigation = NavBarController(rootViewController: sessionController)
+        let progressNavigation = NavBarController(rootViewController: progressController)
+        let settingsNavigation = NavBarController(rootViewController: settingsController)
         
         overviewNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.tabBar.overview, image: Resources.Images.TabBar.overview, tag: Tabs.overview.rawValue)
         sessionNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.tabBar.session, image: Resources.Images.TabBar.session, tag: Tabs.session.rawValue)

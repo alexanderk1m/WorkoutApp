@@ -12,7 +12,12 @@ enum Resources {
     enum Colours {
         static var active = UIColor(hexString: "#437BFE")
         static var inactive = UIColor(hexString: "#929DA5")
+        
         static var separator = UIColor(hexString: "#E8ECEF")
+        static var background = UIColor(hexString: "#F8F9F9")
+        
+        static var titleGray = UIColor(hexString: "#545C77")
+        
         
     }
     
@@ -23,7 +28,6 @@ enum Resources {
             static var progress = "Progress"
             static var settings = "Settings"
         }
-        
     }
     
     enum Images {
@@ -33,6 +37,11 @@ enum Resources {
             static var progress = UIImage(named: "progress_tab")
             static var settings = UIImage(named: "settings_tab")
         }
-
+    }
+    
+    enum Fonts {
+        static func helveticaRegular(with size: CGFloat) -> UIFont {
+            UIFont(name: "Helvetica", size: size) ?? UIFont()
+        }
     }
 }
