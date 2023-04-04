@@ -13,10 +13,10 @@ class ProgressController: BaseController {
         super.viewDidLoad()
         
 
-        title = "Workout Progress"
+        title = Resources.Strings.NavBar.progress
         navigationController?.tabBarItem.title = Resources.Strings.tabBar.progress
-        addNavBarButton(at: .left, with: "Export")
-        addNavBarButton(at: .right, with: "Details")
+        addNavBarButton(at: .left, with: Resources.Strings.Progress.navBarLeft)
+        addNavBarButton(at: .right, with: Resources.Strings.Progress.navBarRight)
         
     }
     

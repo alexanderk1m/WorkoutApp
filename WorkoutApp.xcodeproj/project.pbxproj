@@ -21,6 +21,7 @@
 		FA93DBA529DC412C00A23F23 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBA429DC412C00A23F23 /* SessionController.swift */; };
 		FA93DBA729DC414E00A23F23 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBA629DC414E00A23F23 /* ProgressController.swift */; };
 		FA93DBA929DC416700A23F23 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBA829DC416700A23F23 /* SettingsController.swift */; };
+		FA93DBAC29DC5B1400A23F23 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBAB29DC5B1400A23F23 /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FA93DBA429DC412C00A23F23 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		FA93DBA629DC414E00A23F23 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		FA93DBA829DC416700A23F23 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		FA93DBAB29DC5B1400A23F23 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		FA93DBA029DC409D00A23F23 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				FA93DBAA29DC5AF500A23F23 /* Views */,
 				FA7D9C3829D9C6C500DEC210 /* OverviewController.swift */,
 			);
 			path = Overview;
@@ -169,6 +172,14 @@
 				FA93DBA829DC416700A23F23 /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		FA93DBAA29DC5AF500A23F23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA93DBAB29DC5B1400A23F23 /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				FA7D9C3529D9C6C500DEC210 /* AppDelegate.swift in Sources */,
 				FA93DB9929DC224900A23F23 /* NavBarController.swift in Sources */,
 				FA93DBA529DC412C00A23F23 /* SessionController.swift in Sources */,
+				FA93DBAC29DC5B1400A23F23 /* SecondaryButton.swift in Sources */,
 				FA93DBA729DC414E00A23F23 /* ProgressController.swift in Sources */,
 				FA93DB7729DB3C8100A23F23 /* Resources.swift in Sources */,
 				FA7D9C3729D9C6C500DEC210 /* SceneDelegate.swift in Sources */,
