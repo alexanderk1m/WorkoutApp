@@ -52,7 +52,7 @@ private extension SecondaryButton {
     
     func configure() {
         
-        backgroundColor = Resources.Colours.active.withAlphaComponent(0.2)
+        backgroundColor = Resources.Colours.secondary
         layer.cornerRadius = 14
         makeSystem(self)
         label.textColor = Resources.Colours.active

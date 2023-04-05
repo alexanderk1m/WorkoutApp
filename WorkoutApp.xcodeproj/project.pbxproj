@@ -24,6 +24,9 @@
 		FA93DBAC29DC5B1400A23F23 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBAB29DC5B1400A23F23 /* SecondaryButton.swift */; };
 		FA93DBAE29DD5A7F00A23F23 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBAD29DD5A7F00A23F23 /* OverviewNavBar.swift */; };
 		FA93DBB029DD757D00A23F23 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBAF29DD757D00A23F23 /* BaseView.swift */; };
+		FA93DBB329DD9C4800A23F23 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBB229DD9C4800A23F23 /* WeekView.swift */; };
+		FA93DBB529DDAC5900A23F23 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBB429DDAC5900A23F23 /* DayView.swift */; };
+		FA93DBB729DDB93F00A23F23 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBB629DDB93F00A23F23 /* Date+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		FA93DBAB29DC5B1400A23F23 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		FA93DBAD29DD5A7F00A23F23 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		FA93DBAF29DD757D00A23F23 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		FA93DBB229DD9C4800A23F23 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		FA93DBB429DDAC5900A23F23 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		FA93DBB629DDB93F00A23F23 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			children = (
 				FA93DB7329DB3B3400A23F23 /* UIColor+ext.swift */,
 				FA93DB9D29DC3CC000A23F23 /* UIView+ext.swift */,
+				FA93DBB629DDB93F00A23F23 /* Date+ext.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -182,10 +189,20 @@
 		FA93DBAA29DC5AF500A23F23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA93DBB129DD9C3500A23F23 /* WeekView */,
 				FA93DBAB29DC5B1400A23F23 /* SecondaryButton.swift */,
 				FA93DBAD29DD5A7F00A23F23 /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FA93DBB129DD9C3500A23F23 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				FA93DBB229DD9C4800A23F23 /* WeekView.swift */,
+				FA93DBB429DDAC5900A23F23 /* DayView.swift */,
+			);
+			path = WeekView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA93DBB329DD9C4800A23F23 /* WeekView.swift in Sources */,
 				FA93DBA929DC416700A23F23 /* SettingsController.swift in Sources */,
 				FA7D9C3929D9C6C500DEC210 /* OverviewController.swift in Sources */,
 				FA93DBAE29DD5A7F00A23F23 /* OverviewNavBar.swift in Sources */,
@@ -266,11 +284,13 @@
 				FA93DB9929DC224900A23F23 /* NavBarController.swift in Sources */,
 				FA93DBA529DC412C00A23F23 /* SessionController.swift in Sources */,
 				FA93DBAC29DC5B1400A23F23 /* SecondaryButton.swift in Sources */,
+				FA93DBB729DDB93F00A23F23 /* Date+ext.swift in Sources */,
 				FA93DBA729DC414E00A23F23 /* ProgressController.swift in Sources */,
 				FA93DB7729DB3C8100A23F23 /* Resources.swift in Sources */,
 				FA7D9C3729D9C6C500DEC210 /* SceneDelegate.swift in Sources */,
 				FA93DB9E29DC3CC000A23F23 /* UIView+ext.swift in Sources */,
 				FA93DBB029DD757D00A23F23 /* BaseView.swift in Sources */,
+				FA93DBB529DDAC5900A23F23 /* DayView.swift in Sources */,
 				FA93DB9C29DC37D500A23F23 /* BaseController.swift in Sources */,
 				FA93DB7429DB3B3400A23F23 /* UIColor+ext.swift in Sources */,
 			);
