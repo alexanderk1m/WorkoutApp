@@ -37,7 +37,7 @@ class BaseController: UIViewController {
     }
     
     func configure() {
-        view.backgroundColor = Resources.Colours.background
+        view.backgroundColor = Res.Colours.background
         
     }
     
@@ -55,9 +55,9 @@ extension BaseController {
     func addNavBarButton(at position: NavBarPosition, with title: String) {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
-        button.setTitleColor(Resources.Colours.active, for: .normal)
-        button.setTitleColor(Resources.Colours.inactive, for: .disabled)
-        button.titleLabel?.font = Resources.Fonts.helveticaRegular(with: 17)
+        button.setTitleColor(Res.Colours.active, for: .normal)
+        button.setTitleColor(Res.Colours.inactive, for: .disabled)
+        button.titleLabel?.font = Res.Fonts.helveticaRegular(with: 17)
         
         switch position {
         case .left:

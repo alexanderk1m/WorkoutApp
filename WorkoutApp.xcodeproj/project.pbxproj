@@ -14,7 +14,7 @@
 		FA7D9C4129D9C6C600DEC210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7D9C3F29D9C6C600DEC210 /* LaunchScreen.storyboard */; };
 		FA7D9C4B29D9CC1200DEC210 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D9C4A29D9CC1200DEC210 /* TabBarController.swift */; };
 		FA93DB7429DB3B3400A23F23 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB7329DB3B3400A23F23 /* UIColor+ext.swift */; };
-		FA93DB7729DB3C8100A23F23 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB7629DB3C8100A23F23 /* Resources.swift */; };
+		FA93DB7729DB3C8100A23F23 /* Res.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB7629DB3C8100A23F23 /* Res.swift */; };
 		FA93DB9929DC224900A23F23 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB9829DC224900A23F23 /* NavBarController.swift */; };
 		FA93DB9C29DC37D500A23F23 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB9B29DC37D500A23F23 /* BaseController.swift */; };
 		FA93DB9E29DC3CC000A23F23 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB9D29DC3CC000A23F23 /* UIView+ext.swift */; };
@@ -39,7 +39,7 @@
 		FA7D9C4229D9C6C600DEC210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7D9C4A29D9CC1200DEC210 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FA93DB7329DB3B3400A23F23 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
-		FA93DB7629DB3C8100A23F23 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		FA93DB7629DB3C8100A23F23 /* Res.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res.swift; sourceTree = "<group>"; };
 		FA93DB9829DC224900A23F23 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		FA93DB9B29DC37D500A23F23 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		FA93DB9D29DC3CC000A23F23 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				FA93DB7529DB3B3D00A23F23 /* Extentions */,
-				FA93DB7629DB3C8100A23F23 /* Resources.swift */,
+				FA93DB7629DB3C8100A23F23 /* Res.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -286,7 +286,7 @@
 				FA93DBAC29DC5B1400A23F23 /* SecondaryButton.swift in Sources */,
 				FA93DBB729DDB93F00A23F23 /* Date+ext.swift in Sources */,
 				FA93DBA729DC414E00A23F23 /* ProgressController.swift in Sources */,
-				FA93DB7729DB3C8100A23F23 /* Resources.swift in Sources */,
+				FA93DB7729DB3C8100A23F23 /* Res.swift in Sources */,
 				FA7D9C3729D9C6C500DEC210 /* SceneDelegate.swift in Sources */,
 				FA93DB9E29DC3CC000A23F23 /* UIView+ext.swift in Sources */,
 				FA93DBB029DD757D00A23F23 /* BaseView.swift in Sources */,

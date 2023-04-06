@@ -19,27 +19,27 @@ final class DayView: BaseView {
         let currentDay = startOfWeek.goForward(to: index)
         let day = Calendar.current.component(.day, from: currentDay)
         let isToday = currentDay.stripTime() == Date().stripTime()
-        backgroundColor = isToday ? Resources.Colours.active : Resources.Colours.background
+        backgroundColor = isToday ? Res.Colours.active : Res.Colours.background
         
         nameLabel.text = name.uppercased()
-        nameLabel.textColor = isToday ? .white : Resources.Colours.inactive
+        nameLabel.textColor = isToday ? .white : Res.Colours.inactive
         dateLabel.text = "\(day)"
-        dateLabel.textColor = isToday ? .white : Resources.Colours.inactive
+        dateLabel.textColor = isToday ? .white : Res.Colours.inactive
     }
 }
 
 
 extension DayView {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         
         addView(stackView)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(dateLabel)
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -48,18 +48,18 @@ extension DayView {
         
     }
     
-    override func configureView() {
-        super.configureView()
-        backgroundColor = Resources.Colours.background
+    override func configureAppearance() {
+        super.configureAppearance()
+        backgroundColor = Res.Colours.background
         layer.cornerRadius = 5
         layer.masksToBounds = true
         stackView.spacing = 3
         stackView.axis = .vertical
         
-        nameLabel.font = Resources.Fonts.helveticaRegular(with: 9)
+        nameLabel.font = Res.Fonts.helveticaRegular(with: 9)
         nameLabel.textAlignment = .center
         
-        dateLabel.font = Resources.Fonts.helveticaRegular(with: 15)
+        dateLabel.font = Res.Fonts.helveticaRegular(with: 15)
         dateLabel.textAlignment = .center
         
     }
