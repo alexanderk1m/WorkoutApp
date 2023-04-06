@@ -7,9 +7,9 @@
 
 import UIKit
 
-class SessionController: BaseController {
-    private let timerView: BaseInfoView = {
-        let view = BaseInfoView()
+class SessionController: WABaseController {
+    private let timerView: WABaseInfoView = {
+        let view = WABaseInfoView(with: "progress", buttonTitle: Res.Strings.Progress.last7Days)
         return view
     }()
 }

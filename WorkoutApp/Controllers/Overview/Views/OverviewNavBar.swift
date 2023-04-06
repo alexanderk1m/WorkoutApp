@@ -8,11 +8,27 @@
 import UIKit
 
 
-final class OverviewNavBar: BaseView {
+final class OverviewNavBar: WABaseView {
     
-    private let titleLabel = UILabel()
-    private let allWorkoutsButton = SecondaryButton()
-    private let addButton = UIButton()
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = Res.Strings.NavBar.overview
+        label.textColor = Res.Colours.titleGray
+        label.font = Res.Fonts.helveticaRegular(with: 22)
+        return label
+    }()
+    
+    private let allWorkoutsButton: WAButton = {
+        let button = WAButton(with: .secondary)
+        button.setTitle(Res.Strings.Overview.allWorkoutsButton)
+        return button
+    }()
+    
+    private let addButton: UIButton = {
+        let button = UIButton()
+        button.setImage(Res.Images.Common.add, for: .normal)
+        return button
+    }()
     private let weekView = WeekView()
     
     override func layoutSubviews() {
@@ -53,7 +69,6 @@ extension OverviewNavBar {
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
             allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
             
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
@@ -70,14 +85,7 @@ extension OverviewNavBar {
     
     override func configureAppearance() {
         super.configureAppearance()
-        
-        titleLabel.text = Res.Strings.NavBar.overview
-        titleLabel.textColor = Res.Colours.titleGray
-        titleLabel.font = Res.Fonts.helveticaRegular(with: 22)
-        
-        allWorkoutsButton.setTitle(Res.Strings.Overview.allWorkoutsButton)
-        
-        addButton.setImage(Res.Images.Common.add, for: .normal)
+            
     }
 }
 

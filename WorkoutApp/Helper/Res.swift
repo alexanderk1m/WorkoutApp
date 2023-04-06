@@ -52,6 +52,8 @@ enum Res {
         enum Progress {
             static var navBarLeft = "Export"
             static var navBarRight = "Details"
+            static var last7Days = "LAST 7 DAYS"
+            static var last10Month = "LAST 10 MONTH"
         }
         
         enum Settings {

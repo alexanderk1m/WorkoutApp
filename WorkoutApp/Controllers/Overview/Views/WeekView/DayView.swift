@@ -8,7 +8,7 @@
 import UIKit
 
 
-final class DayView: BaseView {
+final class DayView: WABaseView {
     
     private let nameLabel = UILabel()
     private let dateLabel = UILabel()

@@ -16,18 +16,18 @@
 		FA93DB7429DB3B3400A23F23 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB7329DB3B3400A23F23 /* UIColor+ext.swift */; };
 		FA93DB7729DB3C8100A23F23 /* Res.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB7629DB3C8100A23F23 /* Res.swift */; };
 		FA93DB9929DC224900A23F23 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB9829DC224900A23F23 /* NavBarController.swift */; };
-		FA93DB9C29DC37D500A23F23 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB9B29DC37D500A23F23 /* BaseController.swift */; };
+		FA93DB9C29DC37D500A23F23 /* WABaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB9B29DC37D500A23F23 /* WABaseController.swift */; };
 		FA93DB9E29DC3CC000A23F23 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DB9D29DC3CC000A23F23 /* UIView+ext.swift */; };
 		FA93DBA529DC412C00A23F23 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBA429DC412C00A23F23 /* SessionController.swift */; };
 		FA93DBA729DC414E00A23F23 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBA629DC414E00A23F23 /* ProgressController.swift */; };
 		FA93DBA929DC416700A23F23 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBA829DC416700A23F23 /* SettingsController.swift */; };
-		FA93DBAC29DC5B1400A23F23 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBAB29DC5B1400A23F23 /* SecondaryButton.swift */; };
+		FA93DBAC29DC5B1400A23F23 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBAB29DC5B1400A23F23 /* WAButton.swift */; };
 		FA93DBAE29DD5A7F00A23F23 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBAD29DD5A7F00A23F23 /* OverviewNavBar.swift */; };
-		FA93DBB029DD757D00A23F23 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBAF29DD757D00A23F23 /* BaseView.swift */; };
+		FA93DBB029DD757D00A23F23 /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBAF29DD757D00A23F23 /* WABaseView.swift */; };
 		FA93DBB329DD9C4800A23F23 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBB229DD9C4800A23F23 /* WeekView.swift */; };
 		FA93DBB529DDAC5900A23F23 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBB429DDAC5900A23F23 /* DayView.swift */; };
 		FA93DBB729DDB93F00A23F23 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBB629DDB93F00A23F23 /* Date+ext.swift */; };
-		FA93DBDB29DECBE200A23F23 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBDA29DECBE200A23F23 /* BaseInfoView.swift */; };
+		FA93DBDB29DECBE200A23F23 /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBDA29DECBE200A23F23 /* WABaseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,18 +42,18 @@
 		FA93DB7329DB3B3400A23F23 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		FA93DB7629DB3C8100A23F23 /* Res.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res.swift; sourceTree = "<group>"; };
 		FA93DB9829DC224900A23F23 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
-		FA93DB9B29DC37D500A23F23 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		FA93DB9B29DC37D500A23F23 /* WABaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseController.swift; sourceTree = "<group>"; };
 		FA93DB9D29DC3CC000A23F23 /* UIView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		FA93DBA429DC412C00A23F23 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		FA93DBA629DC414E00A23F23 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		FA93DBA829DC416700A23F23 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		FA93DBAB29DC5B1400A23F23 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		FA93DBAB29DC5B1400A23F23 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		FA93DBAD29DD5A7F00A23F23 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
-		FA93DBAF29DD757D00A23F23 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		FA93DBAF29DD757D00A23F23 /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
 		FA93DBB229DD9C4800A23F23 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		FA93DBB429DDAC5900A23F23 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		FA93DBB629DDB93F00A23F23 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
-		FA93DBDA29DECBE200A23F23 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
+		FA93DBDA29DECBE200A23F23 /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +148,9 @@
 		FA93DB9F29DC408500A23F23 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				FA93DBAB29DC5B1400A23F23 /* WAButton.swift */,
 				FA93DBD929DECBC000A23F23 /* Views */,
-				FA93DB9B29DC37D500A23F23 /* BaseController.swift */,
+				FA93DB9B29DC37D500A23F23 /* WABaseController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -191,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				FA93DBB129DD9C3500A23F23 /* WeekView */,
-				FA93DBAB29DC5B1400A23F23 /* SecondaryButton.swift */,
 				FA93DBAD29DD5A7F00A23F23 /* OverviewNavBar.swift */,
 			);
 			path = Views;
@@ -218,8 +218,8 @@
 		FA93DBD929DECBC000A23F23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA93DBDA29DECBE200A23F23 /* BaseInfoView.swift */,
-				FA93DBAF29DD757D00A23F23 /* BaseView.swift */,
+				FA93DBDA29DECBE200A23F23 /* WABaseInfoView.swift */,
+				FA93DBAF29DD757D00A23F23 /* WABaseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,16 +302,16 @@
 				FA7D9C3529D9C6C500DEC210 /* AppDelegate.swift in Sources */,
 				FA93DB9929DC224900A23F23 /* NavBarController.swift in Sources */,
 				FA93DBA529DC412C00A23F23 /* SessionController.swift in Sources */,
-				FA93DBAC29DC5B1400A23F23 /* SecondaryButton.swift in Sources */,
+				FA93DBAC29DC5B1400A23F23 /* WAButton.swift in Sources */,
 				FA93DBB729DDB93F00A23F23 /* Date+ext.swift in Sources */,
 				FA93DBA729DC414E00A23F23 /* ProgressController.swift in Sources */,
 				FA93DB7729DB3C8100A23F23 /* Res.swift in Sources */,
 				FA7D9C3729D9C6C500DEC210 /* SceneDelegate.swift in Sources */,
 				FA93DB9E29DC3CC000A23F23 /* UIView+ext.swift in Sources */,
-				FA93DBB029DD757D00A23F23 /* BaseView.swift in Sources */,
+				FA93DBB029DD757D00A23F23 /* WABaseView.swift in Sources */,
 				FA93DBB529DDAC5900A23F23 /* DayView.swift in Sources */,
-				FA93DB9C29DC37D500A23F23 /* BaseController.swift in Sources */,
-				FA93DBDB29DECBE200A23F23 /* BaseInfoView.swift in Sources */,
+				FA93DB9C29DC37D500A23F23 /* WABaseController.swift in Sources */,
+				FA93DBDB29DECBE200A23F23 /* WABaseInfoView.swift in Sources */,
 				FA93DB7429DB3B3400A23F23 /* UIColor+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
