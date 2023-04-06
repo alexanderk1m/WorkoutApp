@@ -33,7 +33,7 @@ extension DayView {
     override func setupViews() {
         super.setupViews()
         
-        addView(stackView)
+        setupView(stackView)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(dateLabel)
     }
