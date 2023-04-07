@@ -8,8 +8,8 @@
 import UIKit
 
 class SessionController: WABaseController {
-    private let timerView: WABaseInfoView = {
-        let view = WABaseInfoView(with: "progress", buttonTitle: Res.Strings.Progress.last7Days)
+    private let timerView: TimerView = {
+        let view = TimerView()
         return view
     }()
 }
@@ -27,8 +27,16 @@ extension SessionController {
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
             timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            timerView.heightAnchor.constraint(equalToConstant: 300),
+            timerView.heightAnchor.constraint(equalToConstant: 400),
         ])
+    }
+    
+    override func navBarLeftButtonHandler() {
+        print("PAUSE")
+    }
+    
+    override func navBarRightButtonHandler() {
+        print("FINISH")
     }
     
     override func configureAppearance() {

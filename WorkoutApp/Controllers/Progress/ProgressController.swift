@@ -21,10 +21,10 @@ class ProgressController: WABaseController {
     }
     
     override func navBarLeftButtonHandler() {
-        print("Progress NavBar Left Button Item Tapped")
+        print("EXPORT")
     }
     
     override func navBarRightButtonHandler() {
-        print("Progress NavBar Right Button Item Tapped")
+        print("DETAILS")
     }
 }

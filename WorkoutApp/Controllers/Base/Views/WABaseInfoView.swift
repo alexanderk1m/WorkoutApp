@@ -47,7 +47,6 @@ class WABaseInfoView: WABaseView {
     
 }
 
-
 extension WABaseInfoView {
     override func setupViews() {
         super.setupViews()
@@ -55,16 +54,13 @@ extension WABaseInfoView {
         setupView(titleLabel)
         setupView(contentView)
         setupView(button)
-        
     }
-    
     
     override func constraintViews() {
         super.constraintViews()
         
         let contentTopAnchor: NSLayoutAnchor = titleLabel.text == nil ? topAnchor : titleLabel.bottomAnchor
         let contentTopOffset: CGFloat = titleLabel.text == nil ? 0 : 10
-        
         
         NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -80,7 +76,6 @@ extension WABaseInfoView {
             contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
-        
     }
     
     override func configureAppearance() {
