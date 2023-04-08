@@ -35,12 +35,12 @@ final class TimerView: WABaseInfoView {
     
     private let remainingTimeLabel: UILabel = {
         let label = UILabel()
-        label.text = Res.Strings.Session.elapsedTime
+        label.text = Res.Strings.Session.remainingTime
         label.font = Res.Fonts.helveticaRegular(with: 13)
         label.textColor = Res.Colours.inactive
         label.textAlignment = .center
         return label
-    }()
+    }() 
     
     private let remainingTimeValueLabel: UILabel = {
         let label = UILabel()
@@ -69,10 +69,13 @@ final class TimerView: WABaseInfoView {
     
     func configureTimer(with duration: Double, progress: Double) {
         timerDuration = duration
-        let tempCurrentValue = progress > duration ? duration : progress
         
+        let tempCurrentValue = progress > duration ? duration : progress
         let goalValueDivider = duration == 0 ? 1 : duration
         let percent = tempCurrentValue / goalValueDivider
+
+        elapsedTimeValueLabel.text = getDisplayedString(from: Int(tempCurrentValue))
+        remainingTimeValueLabel.text = getDisplayedString(from: Int(duration) - Int(tempCurrentValue))
         
         progressView.drawProgress(with: CGFloat(percent))
     }
@@ -150,7 +153,21 @@ extension TimerView {
     
     override func configureAppearance() {
         super.configureAppearance()
+    }
+
+}
+
+private extension TimerView {
+    func getDisplayedString(from value: Int) -> String {
+        let seconds = value % 60
+        let minutes = (value / 60) % 60
+        let hours = value / 3600
+        let secondStr = seconds < 10 ? "0\(seconds)" : "\(seconds)"
+        let minutesStr = minutes < 10 ? "0\(minutes)" : "\(minutes)"
+        let hoursStr = hours < 10 ? "0\(hours)" : "\(hours)"
         
-        
+        return hours == 0
+        ? [minutesStr, secondStr].joined(separator: ":")
+        : [hoursStr, minutesStr, secondStr].joined(separator: ":")
     }
 }
