@@ -66,6 +66,7 @@ final class TimerView: WABaseInfoView {
     
     public var state: TimerState = .isStopped
     
+    
     func configureTimer(with duration: Double, progress: Double) {
         timerDuration = duration
         let tempCurrentValue = progress > duration ? duration : progress
@@ -76,15 +77,18 @@ final class TimerView: WABaseInfoView {
         progressView.drawProgress(with: CGFloat(percent))
     }
     
-    func startTimer() {
+    func startTimer(completion: @escaping () -> Void) {
         timer.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { [weak self] _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01,
+                                     repeats: true,
+                                     block: { [weak self] timer in
             guard let self = self else { return }
             self.timerProgress += 0.01
             
             if self.timerProgress > self.timerDuration {
                 self.timerProgress = self.timerDuration
                 timer.invalidate()
+                completion()
             }
             self.configureTimer(with: self.timerDuration, progress: self.timerProgress)
         })

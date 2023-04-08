@@ -14,14 +14,16 @@ class SessionController: WABaseController {
     
     override func navBarLeftButtonHandler() {
         if timerView.state == .isStopped {
-            timerView.startTimer()
-        } else if timerView.state == .isPaused {
-            timerView.startTimer()
+            timerView.startTimer {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.navBarRightButtonHandler()
+                }
+            }
         } else {
             timerView.pauseTimer()
         }
         
-        timerView.state = timerView.state == .isRunning ? .isPaused : .isRunning
+        timerView.state = timerView.state == .isRunning ? .isStopped : .isRunning
         setTitleForNavBarButton(timerView.state == .isRunning ? Res.Strings.Session.navBarPause :
                                     Res.Strings.Session.navBarStart,
                                 at: .left)
