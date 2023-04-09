@@ -30,6 +30,7 @@
 		FA93DBDB29DECBE200A23F23 /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBDA29DECBE200A23F23 /* WABaseInfoView.swift */; };
 		FA93DBDF29DFFE1500A23F23 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBDE29DFFE1500A23F23 /* TimerView.swift */; };
 		FA93DBE129DFFE2000A23F23 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93DBE029DFFE2000A23F23 /* ProgressView.swift */; };
+		FAF7A97A29E2BC01005A6450 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A97929E2BC01005A6450 /* PercentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		FA93DBDA29DECBE200A23F23 /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		FA93DBDE29DFFE1500A23F23 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		FA93DBE029DFFE2000A23F23 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		FAF7A97929E2BC01005A6450 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			children = (
 				FA93DBDE29DFFE1500A23F23 /* TimerView.swift */,
 				FA93DBE029DFFE2000A23F23 /* ProgressView.swift */,
+				FAF7A97929E2BC01005A6450 /* PercentView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				FA93DB7729DB3C8100A23F23 /* Res.swift in Sources */,
 				FA7D9C3729D9C6C500DEC210 /* SceneDelegate.swift in Sources */,
 				FA93DB9E29DC3CC000A23F23 /* UIView+ext.swift in Sources */,
+				FAF7A97A29E2BC01005A6450 /* PercentView.swift in Sources */,
 				FA93DBB029DD757D00A23F23 /* WABaseView.swift in Sources */,
 				FA93DBB529DDAC5900A23F23 /* DayView.swift in Sources */,
 				FA93DB9C29DC37D500A23F23 /* WABaseController.swift in Sources */,

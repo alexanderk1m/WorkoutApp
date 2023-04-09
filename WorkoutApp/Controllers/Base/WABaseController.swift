@@ -48,6 +48,8 @@ class WABaseController: UIViewController {
     func navBarRightButtonHandler() {
         print("right button nav")
     }
+    
+    
 }
 
 
