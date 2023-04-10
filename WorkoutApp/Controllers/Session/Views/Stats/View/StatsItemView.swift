@@ -71,7 +71,6 @@ extension StatsItemView {
     override func setupViews() {
         super.setupViews()
         
-        backgroundColor = .red
         setupView(imageView)
         setupView(stackView)
         stackView.addArrangedSubview(valueLabel)

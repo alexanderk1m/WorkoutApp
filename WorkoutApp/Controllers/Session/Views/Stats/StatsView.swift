@@ -32,6 +32,7 @@ extension StatsView {
         super.setupViews()
         
         setupView(stackView)
+
         
     }
     
@@ -42,7 +43,7 @@ extension StatsView {
             stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 25),
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 25),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
-            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -25),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
         ])
     }
     

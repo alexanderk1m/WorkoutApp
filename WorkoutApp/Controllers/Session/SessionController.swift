@@ -12,6 +12,7 @@ class SessionController: WABaseController {
     private let statsView = StatsView(with: Res.Strings.Session.workoutStats)
     private let stepsView = StepsView(with: Res.Strings.Session.stepsCounter)
     
+    
     private let timerDuration = 5.0
     
     override func navBarLeftButtonHandler() {
@@ -85,5 +86,12 @@ extension SessionController {
                                    .averagePace(value: "9'20''"),
                                    .totalSteps(value: "7292"),
                                    .totalDistance(value: "8.25")])
+        
+        stepsView.configure(with: [WABarView.Data.init(value: "8k", heightMultiplier: 1, title: "2/13"),
+                                   WABarView.Data.init(value: "7k", heightMultiplier: 0.8, title: "2/14"),
+                                   WABarView.Data.init(value: "5k", heightMultiplier: 0.6, title: "2/15"),
+                                   WABarView.Data.init(value: "6k", heightMultiplier: 0.7, title: "2/16"),
+                                    
+        ])
     }
 }
