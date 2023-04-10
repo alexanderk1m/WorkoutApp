@@ -57,12 +57,11 @@ extension SessionController {
             statsView.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: 11),
             statsView.leadingAnchor.constraint(equalTo: timerView.leadingAnchor),
             statsView.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant:  -7.5),
-            statsView.heightAnchor.constraint(equalToConstant: 310),
 
             stepsView.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: 11),
             stepsView.trailingAnchor.constraint(equalTo: timerView.trailingAnchor),
             stepsView.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant:  7.5),
-            stepsView.heightAnchor.constraint(equalToConstant: 310),
+            stepsView.heightAnchor.constraint(equalTo: statsView.heightAnchor),
 
         ])
     }
@@ -81,5 +80,10 @@ extension SessionController {
         addNavBarButton(at: .right, with: Res.Strings.Session.navBarFinish)
         
         timerView.configureTimer(with: timerDuration, progress: 0)
+        
+        statsView.configure(with: [.heartRate(value: "155"),
+                                   .averagePace(value: "9'20''"),
+                                   .totalSteps(value: "7292"),
+                                   .totalDistance(value: "8.25")])
     }
 }

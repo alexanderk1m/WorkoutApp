@@ -7,13 +7,35 @@
 
 import UIKit
 
-class StatsItemView: WABaseView {
+enum StatsItem {
+    case averagePace(value: String)
+    case heartRate(value: String)
+    case totalDistance(value: String)
+    case totalSteps(value: String)
     
-    struct StatsItem {
-        let imageName: UIImage
-        let value: String
-        let title: String
+    var data: ItemData {
+        switch self {
+        case .averagePace(value: let value):
+            return .init(imageName: Res.Images.Session.averagePace!,
+                         value: value + " / km",
+                         title: Res.Strings.Session.averagePace)
+        case .heartRate(value: let value):
+            return .init(imageName: Res.Images.Session.heartRate!,
+                         value: value + "bpm",
+                         title: Res.Strings.Session.heartRate)
+        case .totalDistance(value: let value):
+            return .init(imageName: Res.Images.Session.totalDistance!,
+                         value: value + " km",
+                         title: Res.Strings.Session.totalDistance)
+        case .totalSteps(value: let value):
+            return .init(imageName: Res.Images.Session.totalSteps!,
+                         value: value,
+                         title: Res.Strings.Session.totalSteps)
+        }
     }
+}
+
+class StatsItemView: WABaseView {
     
     private let imageView = UIImageView()
     
@@ -38,19 +60,18 @@ class StatsItemView: WABaseView {
     }()
     
     func configure(with item: StatsItem) {
-        imageView.image = item.imageName
-        valueLabel.text = item.value
-        titleLabel.text = item.title
+        imageView.image = item.data.imageName
+        valueLabel.text = item.data.value
+        titleLabel.text = item.data.title
     }
-    
 }
-
 
 
 extension StatsItemView {
     override func setupViews() {
         super.setupViews()
         
+        backgroundColor = .red
         setupView(imageView)
         setupView(stackView)
         stackView.addArrangedSubview(valueLabel)

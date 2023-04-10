@@ -34,6 +34,7 @@
 		FAF7A97E29E2F7C6005A6450 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A97D29E2F7C6005A6450 /* StatsView.swift */; };
 		FAF7A98029E2F7E9005A6450 /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A97F29E2F7E9005A6450 /* StepsView.swift */; };
 		FAF7A98329E2F84C005A6450 /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A98229E2F84C005A6450 /* StatsItemView.swift */; };
+		FAF7A98529E44F12005A6450 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A98429E44F12005A6450 /* ItemData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		FAF7A97D29E2F7C6005A6450 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		FAF7A97F29E2F7E9005A6450 /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
 		FAF7A98229E2F84C005A6450 /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
+		FAF7A98429E44F12005A6450 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +162,6 @@
 		FA93DB9F29DC408500A23F23 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				FA93DBAB29DC5B1400A23F23 /* WAButton.swift */,
 				FA93DBD929DECBC000A23F23 /* Views */,
 				FA93DB9B29DC37D500A23F23 /* WABaseController.swift */,
 			);
@@ -231,8 +232,9 @@
 		FA93DBD929DECBC000A23F23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA93DBDA29DECBE200A23F23 /* WABaseInfoView.swift */,
 				FA93DBAF29DD757D00A23F23 /* WABaseView.swift */,
+				FA93DBDA29DECBE200A23F23 /* WABaseInfoView.swift */,
+				FA93DBAB29DC5B1400A23F23 /* WAButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +279,7 @@
 		FAF7A98129E2F830005A6450 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FAF7A98429E44F12005A6450 /* ItemData.swift */,
 				FAF7A98229E2F84C005A6450 /* StatsItemView.swift */,
 			);
 			path = View;
@@ -364,6 +367,7 @@
 				FA93DBAC29DC5B1400A23F23 /* WAButton.swift in Sources */,
 				FA93DBB729DDB93F00A23F23 /* Date+ext.swift in Sources */,
 				FA93DBDF29DFFE1500A23F23 /* TimerView.swift in Sources */,
+				FAF7A98529E44F12005A6450 /* ItemData.swift in Sources */,
 				FA93DBE129DFFE2000A23F23 /* ProgressView.swift in Sources */,
 				FA93DBA729DC414E00A23F23 /* ProgressController.swift in Sources */,
 				FA93DB7729DB3C8100A23F23 /* Res.swift in Sources */,

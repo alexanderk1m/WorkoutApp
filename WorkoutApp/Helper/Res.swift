@@ -56,13 +56,13 @@ enum Res {
             static let remaining = "Remaining"
             static let completed = "Completed"
             
-            static let workoutStats = "Workout stats"
-            static let averagePace = "Average pace"
+            static let workoutStats = "WORKOUT STATS"
+            static let averagePace = "AVERAGE PACE"
             static let heartRate = "HEART RATE"
-            static let totalDistance = "Total distance"
-            static let totalSteps = "Total steps"
+            static let totalDistance = "TOTAL DISTANCE"
+            static let totalSteps = "TOTAL STEPS"
             
-            static let stepsCounter = "Steps Counter"
+            static let stepsCounter = "STEPS COUNTER"
         }
         
         enum Progress {
