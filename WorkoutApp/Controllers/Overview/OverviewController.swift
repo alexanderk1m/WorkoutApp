@@ -12,6 +12,13 @@ class OverviewController: WABaseController {
     private let navBar = OverviewNavBar()
     
     private let header = SectionHeaderView()
+    
+    private let cell = TrainingCellView()
+    
+//    override func viewDidLayoutSubviews() {
+//        super.viewDidLayoutSubviews()
+//        cell.roundCorners([.allCorners], radius: 5)
+//    }
 
 }
 
@@ -22,6 +29,7 @@ extension OverviewController {
         
         view.setupView(navBar)
         view.setupView(header)
+        view.setupView(cell)
         
     }
     
@@ -36,7 +44,12 @@ extension OverviewController {
             header.topAnchor.constraint(equalTo: navBar.bottomAnchor),
             header.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             header.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            header.heightAnchor.constraint(equalToConstant: 37)
+            header.heightAnchor.constraint(equalToConstant: 37),
+            
+            cell.topAnchor.constraint(equalTo: header.bottomAnchor),
+            cell.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            cell.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            cell.heightAnchor.constraint(equalToConstant: 75),
              
         ])
         
@@ -50,6 +63,11 @@ extension OverviewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, MMMM dd"
         header.configure(with: dateFormatter.string(from: Date()))
+        
+        cell.configure(with: "Warm Up Cardio", subtitle: "Stair Climber • 10 minutes", isDone: false)
+        
+        cell.layoutIfNeeded()
+        cell.roundCorners([.allCorners], radius: 5)
         
     }
     

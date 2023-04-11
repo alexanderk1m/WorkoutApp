@@ -44,6 +44,7 @@
 		FAF7A99C29E55FA9005A6450 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A99B29E55FA9005A6450 /* XAxisView.swift */; };
 		FAF7A99E29E567DC005A6450 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A99D29E567DC005A6450 /* ChartView.swift */; };
 		FAF7A9A329E5B924005A6450 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A9A229E5B924005A6450 /* SectionHeaderView.swift */; };
+		FAF7A9A529E5CD4F005A6450 /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A9A429E5CD4F005A6450 /* TrainingCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		FAF7A99B29E55FA9005A6450 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		FAF7A99D29E567DC005A6450 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		FAF7A9A229E5B924005A6450 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		FAF7A9A429E5CD4F005A6450 /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -404,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF7A9A229E5B924005A6450 /* SectionHeaderView.swift */,
+				FAF7A9A429E5CD4F005A6450 /* TrainingCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				FA7D9C3529D9C6C500DEC210 /* AppDelegate.swift in Sources */,
 				FAF7A98829E4750F005A6450 /* WABarsView.swift in Sources */,
 				FAF7A97E29E2F7C6005A6450 /* StatsView.swift in Sources */,
+				FAF7A9A529E5CD4F005A6450 /* TrainingCellView.swift in Sources */,
 				FA93DB9929DC224900A23F23 /* NavBarController.swift in Sources */,
 				FA93DBA529DC412C00A23F23 /* SessionController.swift in Sources */,
 				FA93DBAC29DC5B1400A23F23 /* WAButton.swift in Sources */,

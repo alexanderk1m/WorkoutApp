@@ -96,6 +96,12 @@ enum Res {
             
         }
         
+        enum Overview {
+            static let rightArrow = UIImage(named: "right_arrow")
+            static let checkmarkDone = UIImage(named: "checkmark_done")
+            static let checkmarkNot = UIImage(named: "checkmark_not")
+        }
+        
         enum Session {
             static let averagePace = UIImage(named: "stats_averagePace")
             static let heartRate = UIImage(named: "stats_heartRate")
