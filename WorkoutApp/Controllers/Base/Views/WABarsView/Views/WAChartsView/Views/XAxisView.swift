@@ -11,7 +11,7 @@ final class XAxisView: WABaseView {
     
     private let stackView: UIStackView = {
         let view = UIStackView()
-        view.distribution = .fillEqually
+        view.distribution = .equalSpacing
         return view
     }()
     
@@ -24,13 +24,12 @@ final class XAxisView: WABaseView {
             label.font = Res.Fonts.helveticaRegular(with: 9)
             label.textColor = Res.Colours.inactive
             label.text = $0.title.uppercased()
-            label.textAlignment = .right
+            label.textAlignment = .center
             
             stackView.addArrangedSubview(label)
         }
     }
 }
-
 
 extension XAxisView {
     override func setupViews() {

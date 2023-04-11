@@ -19,11 +19,12 @@ final class WAChartsView: WABaseView {
     private let yAxisView = YAxisView()
     private let xAxisView = XAxisView()
     
-    private let chartView = UIView() //WAChartView()
+    private let chartView = ChartView()
     
     func configure(with data: [WAChartsView.Data]) {
         xAxisView.configure(with: data)
         yAxisView.configure(with: data)
+        chartView.configure()
         
     }
     
@@ -47,14 +48,14 @@ extension WAChartsView {
             yAxisView.topAnchor.constraint(equalTo: topAnchor),
             yAxisView.bottomAnchor.constraint(equalTo: xAxisView.topAnchor, constant: -12),
             
-            xAxisView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor),
+            xAxisView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor, constant: 8),
             xAxisView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            xAxisView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            xAxisView.trailingAnchor.constraint(equalTo: trailingAnchor , constant: 4),
             
-            chartView.topAnchor.constraint(equalTo: topAnchor),
-            chartView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            chartView.bottomAnchor.constraint(equalTo: xAxisView.topAnchor, constant: -12),
-            chartView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor, constant: 12),
+            chartView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor, constant: 17),
+            chartView.topAnchor.constraint(equalTo: topAnchor, constant: 5),
+            chartView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
+            chartView.bottomAnchor.constraint(equalTo: xAxisView.topAnchor, constant: -17),
         ])
     }
     
@@ -62,6 +63,6 @@ extension WAChartsView {
         super.configureAppearance()
         
         backgroundColor = .clear
-        chartView.backgroundColor = .systemYellow
+        
     }
 }

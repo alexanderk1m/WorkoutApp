@@ -42,6 +42,7 @@
 		FAF7A99629E554AC005A6450 /* WAChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A99529E554AC005A6450 /* WAChartsView.swift */; };
 		FAF7A99A29E55AA1005A6450 /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A99929E55AA1005A6450 /* YAxisView.swift */; };
 		FAF7A99C29E55FA9005A6450 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A99B29E55FA9005A6450 /* XAxisView.swift */; };
+		FAF7A99E29E567DC005A6450 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A99D29E567DC005A6450 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		FAF7A99529E554AC005A6450 /* WAChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAChartsView.swift; sourceTree = "<group>"; };
 		FAF7A99929E55AA1005A6450 /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
 		FAF7A99B29E55FA9005A6450 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
+		FAF7A99D29E567DC005A6450 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +376,7 @@
 			children = (
 				FAF7A99929E55AA1005A6450 /* YAxisView.swift */,
 				FAF7A99B29E55FA9005A6450 /* XAxisView.swift */,
+				FAF7A99D29E567DC005A6450 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				FAF7A98329E2F84C005A6450 /* StatsItemView.swift in Sources */,
 				FAF7A98F29E53AEA005A6450 /* DailyPerformanceView.swift in Sources */,
 				FAF7A97A29E2BC01005A6450 /* PercentView.swift in Sources */,
+				FAF7A99E29E567DC005A6450 /* ChartView.swift in Sources */,
 				FA93DBB029DD757D00A23F23 /* WABaseView.swift in Sources */,
 				FA93DBB529DDAC5900A23F23 /* DayView.swift in Sources */,
 				FAF7A98029E2F7E9005A6450 /* StepsView.swift in Sources */,
