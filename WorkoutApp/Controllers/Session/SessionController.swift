@@ -70,10 +70,6 @@ extension SessionController {
 
     override func configureAppearance() {
         super.configureAppearance()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
         title = Res.Strings.NavBar.session
         navigationController?.tabBarItem.title = Res.Strings.TabBar.title(for: .session)
@@ -94,4 +90,5 @@ extension SessionController {
                                     
         ])
     }
+    
 }

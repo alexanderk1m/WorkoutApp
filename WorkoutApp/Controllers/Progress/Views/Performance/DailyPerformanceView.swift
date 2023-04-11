@@ -1,11 +1,15 @@
-
+//
+//  DailyPerformanceView.swift
+//  WorkoutApp
+//
+//  Created by Alexander Kim on 11.04.2023.
+//
 
 import UIKit
 
-final class StepsView: WABaseInfoView {
-        
-    private let barsView = WABarsView()
+final class DailyPerformanceView: WABaseInfoView {
     
+    private let barsView = WABarsView()
     
     func configure(with items: [WABarView.Data]) {
         barsView.configure(with: items)
@@ -13,12 +17,11 @@ final class StepsView: WABaseInfoView {
     }
 }
 
-extension StepsView {
+extension DailyPerformanceView {
     override func setupViews() {
         super.setupViews()
         
         setupView(barsView)
-                
     }
     
     override func constraintViews() {
@@ -34,7 +37,6 @@ extension StepsView {
     
     override func configureAppearance() {
         super.configureAppearance()
-        
-        
+
     }
 }

@@ -68,8 +68,12 @@ enum Res {
         enum Progress {
             static let navBarLeft = "Export"
             static let navBarRight = "Details"
-            static let last7Days = "LAST 7 DAYS"
+            
+            static let last7Days = "Last 7 days"
             static let last10Month = "LAST 10 MONTH"
+            
+            static let dailyPerformance = "Daily Performance"
+            static let monthlyPerformance = "Monthly Performance"
         }
         
         enum Settings {
