@@ -43,6 +43,7 @@
 		FAF7A99A29E55AA1005A6450 /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A99929E55AA1005A6450 /* YAxisView.swift */; };
 		FAF7A99C29E55FA9005A6450 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A99B29E55FA9005A6450 /* XAxisView.swift */; };
 		FAF7A99E29E567DC005A6450 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A99D29E567DC005A6450 /* ChartView.swift */; };
+		FAF7A9A329E5B924005A6450 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7A9A229E5B924005A6450 /* SectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		FAF7A99929E55AA1005A6450 /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
 		FAF7A99B29E55FA9005A6450 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		FAF7A99D29E567DC005A6450 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		FAF7A9A229E5B924005A6450 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,8 +224,8 @@
 		FA93DBAA29DC5AF500A23F23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA93DBB129DD9C3500A23F23 /* WeekView */,
-				FA93DBAD29DD5A7F00A23F23 /* OverviewNavBar.swift */,
+				FAF7A9A029E5B903005A6450 /* CollectionView */,
+				FAF7A99F29E5B8BC005A6450 /* NavBar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -381,6 +383,31 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		FAF7A99F29E5B8BC005A6450 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA93DBAD29DD5A7F00A23F23 /* OverviewNavBar.swift */,
+				FA93DBB129DD9C3500A23F23 /* WeekView */,
+			);
+			path = NavBar;
+			sourceTree = "<group>";
+		};
+		FAF7A9A029E5B903005A6450 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7A9A129E5B917005A6450 /* Views */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		FAF7A9A129E5B917005A6450 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7A9A229E5B924005A6450 /* SectionHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,6 +510,7 @@
 				FA93DBB529DDAC5900A23F23 /* DayView.swift in Sources */,
 				FAF7A98029E2F7E9005A6450 /* StepsView.swift in Sources */,
 				FA93DB9C29DC37D500A23F23 /* WABaseController.swift in Sources */,
+				FAF7A9A329E5B924005A6450 /* SectionHeaderView.swift in Sources */,
 				FA93DBDB29DECBE200A23F23 /* WABaseInfoView.swift in Sources */,
 				FA93DB7429DB3B3400A23F23 /* UIColor+ext.swift in Sources */,
 			);

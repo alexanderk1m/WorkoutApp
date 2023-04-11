@@ -22,7 +22,6 @@ final class TabBarController: UITabBarController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         configure()
-        switchTo(tab: .progress)
     }
     
     required init?(coder: NSCoder) {

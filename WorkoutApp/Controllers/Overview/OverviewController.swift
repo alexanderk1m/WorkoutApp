@@ -10,7 +10,8 @@ import UIKit
 class OverviewController: WABaseController {
     
     private let navBar = OverviewNavBar()
-
+    
+    private let header = SectionHeaderView()
 
 }
 
@@ -20,6 +21,7 @@ extension OverviewController {
         super.setupViews()
         
         view.setupView(navBar)
+        view.setupView(header)
         
     }
     
@@ -30,6 +32,11 @@ extension OverviewController {
             navBar.topAnchor.constraint(equalTo: view.topAnchor),
             navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            header.topAnchor.constraint(equalTo: navBar.bottomAnchor),
+            header.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            header.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            header.heightAnchor.constraint(equalToConstant: 37)
              
         ])
         
@@ -39,6 +46,10 @@ extension OverviewController {
         super.configureAppearance()
         
         navigationController?.navigationBar.isHidden = true
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMMM dd"
+        header.configure(with: dateFormatter.string(from: Date()))
         
     }
     
