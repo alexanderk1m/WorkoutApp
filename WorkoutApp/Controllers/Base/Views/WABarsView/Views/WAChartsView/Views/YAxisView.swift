@@ -17,6 +17,7 @@ final class YAxisView: WABaseView {
     }()
     
     func configure(with data: [WAChartsView.Data]) {
+        
         stackView.arrangedSubviews.forEach {
             $0.removeFromSuperview()
         }
@@ -25,7 +26,7 @@ final class YAxisView: WABaseView {
             label.font = Res.Fonts.helveticaRegular(with: 9)
             label.textColor = Res.Colours.inactive
             label.textAlignment = .right
-            label.text = "\($0 * 10)" //TODO: - Remake calculated interval
+            label.text = "\($0 * 10)"
             
             stackView.addArrangedSubview(label)
 

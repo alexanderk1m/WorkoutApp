@@ -73,8 +73,8 @@ extension ProgressController {
                                                 WAChartsView.Data.init(value: 65, title: "sep"),
                                                 WAChartsView.Data.init(value: 45, title: "oct"),
                                                 WAChartsView.Data.init(value: 30, title: "nov"),
-                                                WAChartsView.Data.init(value: 15, title: "dec"),
-                                               ])
+                                                WAChartsView.Data.init(value: 15, title: "dec")],
+                                         topChartsOffset: 10)
         
     }
     
