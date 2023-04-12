@@ -32,11 +32,11 @@ extension UIView {
     }
     
     @objc func handleIn() {
-        UIView.animate(withDuration: 0.15) { self.alpha = 0.55; self.transform = CGAffineTransform(scaleX: 0.5, y: 0.5) }
+        UIView.animate(withDuration: 0.15) { self.alpha = 0.55} //self.transform = CGAffineTransform(scaleX: 0.5, y: 0.5) }
     }
     
     @objc func handleOut() {
-        UIView.animate(withDuration: 0.15) { self.alpha = 1; self.transform = CGAffineTransform.identity }
+        UIView.animate(withDuration: 0.15) { self.alpha = 1} //self.transform = CGAffineTransform.identity }
     }
     
     func setupView(_ view: UIView) {

@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum CellRoundedType {
+    case top, bottom, all, notRounded
+}
+
 final class TrainingCellView: UICollectionViewCell {
     
     static let id = "TrainingViewCell"
@@ -56,11 +60,18 @@ final class TrainingCellView: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with title: String, subtitle: String, isDone: Bool ) {
+    func configure(with title: String, subtitle: String, isDone: Bool, roundedType: CellRoundedType) {
         self.title.text = title
         self.subtitle.text = subtitle
         
         checkmarkView.image = isDone ? Res.Images.Overview.checkmarkDone : Res.Images.Overview.checkmarkNot
+        
+        switch roundedType {
+        case .all: self.roundCorners([.allCorners], radius: 5)
+        case .bottom: self.roundCorners([.bottomLeft, .bottomRight], radius: 5)
+        case .top: self.roundCorners([.topLeft, .topRight], radius: 5)
+        case .notRounded: self.roundCorners([.allCorners], radius: 0)
+        }
     }
 }
 
@@ -93,12 +104,12 @@ extension TrainingCellView {
             rightArrowView.widthAnchor.constraint(equalToConstant: 7),
             
         ])
-        
     }
     
     func configureAppearance() {
         backgroundColor = .white
-        layer.borderWidth = 1
+        layer.borderWidth = 2
+//        layer.borderColor = Res.Colours.separator.cgColor
         layer.borderColor = UIColor.clear.cgColor
         
         
